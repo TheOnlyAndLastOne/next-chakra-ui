@@ -57,6 +57,7 @@ function project2() {
           justifyContent={"center"}
           alignItems={"center"}
           spacing={"10"}
+          overflow={"hidden"}
         >
           <Heading
             fontSize={"50px"}
@@ -67,14 +68,14 @@ function project2() {
             Build a landing page for your business or project and generate more
             leads!
           </Heading>
-          <HStack>
+          <Flex direction={{ base: "column", md: "row" }} gap={"4"}>
             <Input
               backgroundColor={"whiteAlpha.900"}
               placeholder="Enter your email..."
-              width={"400px"}
+              maxW={"400px"}
             />
             <Button colorScheme={"blue"}>Sign Up</Button>
-          </HStack>
+          </Flex>
         </VStack>
       </HStack>
 
@@ -252,14 +253,14 @@ function project2() {
           >
             Ready to get started? Sign up now!
           </Heading>
-          <HStack>
+          <Flex direction={{ base: "column", md: "row" }} gap={"4"}>
             <Input
               backgroundColor={"whiteAlpha.900"}
               placeholder="Enter your email..."
-              width={"400px"}
+              maxW={"400px"}
             />
             <Button colorScheme={"blue"}>Sign Up</Button>
-          </HStack>
+          </Flex>
         </VStack>
       </HStack>
 

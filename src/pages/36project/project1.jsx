@@ -126,19 +126,20 @@ function project1() {
 
         {/* body */}
         <VStack
-          w={"50%"}
+          maxW={"50%"}
           h={"full"}
           justifyContent={"center"}
           textAlign={"center"}
           color={"white"}
           spacing={"6"}
+          overflow={"hidden"}
         >
           <Text>
             <Image w={"200px"} src="/static/36project/project1/logo1.png" />
           </Text>
-          <Heading fontWeight={"600"} fontSize={"7xl"}>
+          <Text fontWeight={"600"} fontSize={{ base: "5xl", md: "7xl" }}>
             Boomerang
-          </Heading>
+          </Text>
           <Text fontWeight={"600"} fontSize={"2xl"}>
             Multipurpose Bootstrap Theme
           </Text>

@@ -184,7 +184,7 @@ function project4() {
           direction={"column"}
           alignItems={"start"}
           color={"whiteAlpha.900"}
-          pl={"28"}
+          pl={{ base: "0px", md: "28" }}
         >
           <Heading fontSize={"75px"} fontWeight={"300"}>
             Stop waiting.{" "}
@@ -209,7 +209,7 @@ function project4() {
       <Center minH={"40vh"} bg={"yellow.400"}>
         <VStack spacing={"10"}>
           <Heading>We new friends!</Heading>
-          <HStack spacing={"20"}>
+          <Flex direction={{ base: "column", md: "row" }} gap={"20"}>
             <Circle size="70px" bg="#1ea1f1" color="white">
               <FaFacebookF size={"30px"} />
             </Circle>
@@ -219,7 +219,7 @@ function project4() {
             <Circle size="70px" bg="#de4c39" color="white">
               <FaNapster size={"30px"} />
             </Circle>
-          </HStack>
+          </Flex>
         </VStack>
       </Center>
 
