@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { FaHome, FaUser, FaGithub, FaSteam } from "react-icons/fa";
-import Layout1 from "../../layouts/layout1";
+import Layout1 from "/src/layouts/layout1";
 
 function Video() {
   return (

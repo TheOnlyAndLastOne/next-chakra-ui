@@ -13,7 +13,7 @@ import {
   Center,
   Flex,
 } from "@chakra-ui/react";
-import Layout1 from "../../layouts/layout1";
+import Layout1 from "/src/layouts/layout1";
 
 function FormikPage() {
   const chakraMik = chakra(Formik);

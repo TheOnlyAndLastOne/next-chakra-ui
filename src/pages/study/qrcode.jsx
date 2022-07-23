@@ -25,8 +25,8 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import ColorPicker from "../../components/template/qrcode/color";
-import Layout1 from "../../layouts/layout1";
+import ColorPicker from "/src/components/template/qrcode/color";
+import Layout1 from "/src/layouts/layout1";
 
 function qrcode() {
   const [qrcodeContext, setQrcodeContext] = useState({
