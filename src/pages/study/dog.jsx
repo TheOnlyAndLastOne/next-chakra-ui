@@ -1,6 +1,6 @@
 // import { Box, Center, Flex, Img } from "@chakra-ui/react";
 // import React from "react";
-// import Layout1 from "../../layouts/layout1";
+// import Layout1 from "../../layouts/Layout1";
 
 // function Dog(props) {
 //   return (
