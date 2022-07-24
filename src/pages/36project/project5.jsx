@@ -29,7 +29,7 @@ import {
 
 function project5() {
   return (
-    <>
+    <Box>
       <Box
         w={"full"}
         minH={"100vh"}
@@ -45,7 +45,7 @@ function project5() {
         >
           <Flex
             w={"full"}
-            direction={{ base: "column", sm: "row" }}
+            display={{ base: "none", md: "flex" }}
             gap={"8"}
             textTransform={"uppercase"}
             color={"whiteAlpha.900"}
@@ -87,19 +87,19 @@ function project5() {
           </Flex>
 
           <Flex
-            flex={1}
             direction={"column"}
             maxW={"4xl"}
+            my={"auto"}
             textAlign={"center"}
             color={"whiteAlpha.900"}
             justifyContent={"center"}
             alignItems={"center"}
             gap={"10"}
           >
-            <Heading fontSize={"6xl"}>
+            <Heading fontSize={{ base: "xl", md: "3xl", lg: "6xl" }}>
               YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES
             </Heading>
-            <Box width={"16"} borderBottom={"3px solid red"}></Box>
+            <Box maxW={"16"} borderBottom={"3px solid red"}></Box>
             <Text fontSize={"xl"} w={"80%"}>
               Start Bootstrap can help you build better websites using the
               Bootstrap CSS framework!Just download your template and start
@@ -131,8 +131,8 @@ function project5() {
           <Text color={"whiteAlpha.900"} fontSize={"3xl"} fontWeight={"bold"}>
             We've got what you need!
           </Text>
-          <Box w={"16"} borderBottom={"4px solid white"}></Box>
-          <Text w={"2xl"} color={"whiteAlpha.900"}>
+          <Box maxW={"16"} borderBottom={"4px solid white"}></Box>
+          <Text maxW={"2xl"} color={"whiteAlpha.900"}>
             Start Bootstrap has everything you need to get your new website up
             and running in no time! All of the templates and themes on Start
             Bootstrap are open source,free to download,and easy to use.No
@@ -232,12 +232,12 @@ function project5() {
               alignItems={{ base: "center", md: "self-end" }}
             >
               <Icon as={FaMedium} w={"16"} h={"16"} />
-              <Text>feedback@startbootstrap.com</Text>
+              <Text w={"full"}>feedback@startbootstrap.com</Text>
             </Stack>
           </SimpleGrid>
         </HStack>
       </VStack>
-    </>
+    </Box>
   );
 }
 
