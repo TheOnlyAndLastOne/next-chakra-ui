@@ -194,7 +194,7 @@ function project5() {
         </SimpleGrid>
         <Center minH={"50vh"}>
           <VStack spacing={"8"}>
-            <Text fontSize={"4xl"} color={"whiteAlpha.900"}>
+            <Text fontSize={"4xl"} color={"whiteAlpha.900"} textAlign={"center"}>
               Free Download at Start Bootstrap!
             </Text>
             <Button size={"lg"} borderRadius={"full"}>
