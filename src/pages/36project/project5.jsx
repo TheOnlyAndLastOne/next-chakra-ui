@@ -36,6 +36,7 @@ function project5() {
         backgroundImage={"url('/static/36project/project5/header.jpg')"}
         backgroundPosition={"center"}
         backgroundSize={"cover"}
+        bgAttachment={"fixed"}
       >
         <Flex
           direction={"column"}
