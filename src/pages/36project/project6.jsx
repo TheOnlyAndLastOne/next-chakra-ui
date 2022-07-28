@@ -215,7 +215,7 @@ function project6() {
           >
             <Avatar src="/static/36project/project6/testi-1.png" />
             <VStack>
-              <Text>
+              <Text display={{ base: "none", sm: "flex" }}>
                 Accessories Here you can find the best computer accessory for
                 your laptop,monitor,printer,scanner,speaker,projector,hardware.
               </Text>
@@ -231,7 +231,7 @@ function project6() {
           >
             <Avatar src="/static/36project/project6/testi-2.png" />
             <VStack>
-              <Text>
+              <Text display={{ base: "none", sm: "flex" }}>
                 Accessories Here you can find the best computer accessory for
                 your laptop,monitor,printer,scanner,speaker,projector,hardware.
               </Text>
@@ -296,13 +296,12 @@ function Footer() {
       color={"whiteAlpha.900"}
       spacing={"20"}
     >
-      <SimpleGrid
-        columns={{ base: 1, md: 3 }}
+      <Flex
+        direction={{ base: "column", md: "row" }}
         px={{ base: "4", md: "10", lg: "20" }}
-        spacingX={"10"}
-        spacingY={"10"}
+        gap={"10"}
       >
-        <VStack alignItems={"start"}>
+        <VStack alignItems={"start"} flex={2}>
           <Text fontSize={"lg"} fontWeight={"bold"}>
             ABOUT ME
           </Text>
@@ -313,7 +312,7 @@ function Footer() {
           </Text>
         </VStack>
 
-        <VStack alignItems={"start"}>
+        <VStack alignItems={"start"} flex={1}>
           <Text fontSize={"lg"} fontWeight={"bold"}>
             NEWSLETTER
           </Text>
@@ -321,7 +320,7 @@ function Footer() {
           <Input w={"auto"} maxW={"full"} />
         </VStack>
 
-        <VStack alignItems={"start"}>
+        <VStack alignItems={"start"} flex={1}>
           <Text fontSize={"lg"} fontWeight={"bold"}>
             FOLLOW ME
           </Text>
@@ -333,7 +332,7 @@ function Footer() {
             <Icon as={FaUikit} />
           </HStack>
         </VStack>
-      </SimpleGrid>
+      </Flex>
       <Text>
         Copyright ©2018 All rights reserved | This template is made with ♥ by{" "}
         <chakra.span color={"orange.300"}>Colorlib</chakra.span>
@@ -475,7 +474,9 @@ function BlogCard({ image }) {
           Life Style
         </Button>
       </HStack>
-      <Text>LOW COST ADVERTISING</Text>
+      <Text fontSize={"lg"} fontWeight={"bold"}>
+        LOW COST ADVERTISING
+      </Text>
       <Text>
         Acres of Diamonds… you’ve read the famous story, or at least had it
         related to you. A farmer hears tales of diamonds and begins dreaming of
